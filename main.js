@@ -1,3 +1,5 @@
+var items = [];
+
 function home() {
 	console.log("Showing Home Page...");
 	$(".list").hide();
@@ -32,7 +34,6 @@ function init() {
 }
 
 $(document).ready(function() {
-	var items = [];
 	$.getJSON('main.json', function(data){
 		console.log(data);
 		$.each(data, function(key, val) {
