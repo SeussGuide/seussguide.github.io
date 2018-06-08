@@ -37,6 +37,7 @@ $(document).ready(function() {
 	$.getJSON('main.json', function(data){
 		console.log(data);
 		$.each(data, function(key, val) {
+			console.log(val);
 			items.push(val);
 		});
 	});
