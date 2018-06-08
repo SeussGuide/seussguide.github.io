@@ -1,0 +1,24 @@
+BODY {
+	margin: 0px 0px 0px 5%;
+	padding-top: 3.5rem;
+}
+
+@font-face {
+    font-family: 'grinchedregular';
+    src: url('GrinchedRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin:  0;
+  font-size: 15px;
+}
+
+.grinched {
+	font-family: 'grinchedregular';
+	text-align: center;
+	color: red !important;
+}
