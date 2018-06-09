@@ -40,8 +40,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	for(var i in items) {
-		console.log(items[i].name);
+	for(var i = 0; i < items.length; i++;) {
 		var text = '<li><div class="col-sm">';
 		text += items[i].name;
 		text += '</div><div class="col-sm">' 
@@ -51,4 +50,6 @@ $(document).ready(function() {
 		text += '</div></li>';
 		$("#booklist").append(text);
 	}
+	
+	init();
 });
