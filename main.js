@@ -41,13 +41,13 @@ $(document).ready(function() {
 	});
 	
 	for(var i = 0; i < items.length; i++;) {
-		var text = '<li><div class="col-sm">';
+		var text = '<li><div class="row"><div class="col-sm">';
 		text += items[i].name;
 		text += '</div><div class="col-sm">' 
 		text += items[i].desc;
 		text += '</div><div class="col-sm">';
 		text += items[i].year;
-		text += '</div></li>';
+		text += '</div></div></li>';
 		$("#booklist").append(text);
 	}
 	
