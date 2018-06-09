@@ -36,14 +36,19 @@ function init() {
 $(document).ready(function() {
 	$.getJSON('main.json', function(data){
 		console.log(data);
-		$.each(data, function(key, val) {
-			console.log(val);
-			items.push(val);
-		});
+		for(var d in data) {
+			items.push(data[d]);
+		}
 	});
 	
 	for(var i in items) {
-		$("#booklist").append(items[i]);
-		console.log(items[i]);
+		var text = '<li><div class="col-sm">';
+		text += items[i]["name"];
+		text += '</div><div class="col-sm">' 
+		text += items[i]["desc"];
+		text += '</div><div class="col-sm">';
+		text += items[i]["year"];
+		text += '</div></li>';
+		console.log(text);
 	}
 });
