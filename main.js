@@ -49,6 +49,7 @@ $(document).ready(function() {
 		text += '</div><div class="col-sm">';
 		text += items[i]["year"];
 		text += '</div></li>';
+		$("#booklist").append(text);
 		console.log(text);
 	}
 });
