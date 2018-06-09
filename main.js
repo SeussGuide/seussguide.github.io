@@ -35,21 +35,20 @@ function init() {
 
 $(document).ready(function() {
 	$.getJSON('main.json', function(data){
-		console.log(data);
 		for(var d in data) {
 			items.push(data[d]);
 		}
 	});
 	
 	for(var i in items) {
+		console.log(items[i].name);
 		var text = '<li><div class="col-sm">';
-		text += items[i]["name"];
+		text += items[i].name;
 		text += '</div><div class="col-sm">' 
-		text += items[i]["desc"];
+		text += items[i].desc;
 		text += '</div><div class="col-sm">';
-		text += items[i]["year"];
+		text += items[i].year;
 		text += '</div></li>';
 		$("#booklist").append(text);
-		console.log(text);
 	}
 });
