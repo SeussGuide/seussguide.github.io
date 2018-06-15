@@ -28,19 +28,18 @@ function init() {
 		}
 	});
 	
-	console.log("Before for loop");
+	console.log(items.length);
 	for(var i = 0; i < items.length; i++) {
-		var text = '<li><div class="row"><div class="col-sm">';
+		var text = '<li><div class="row list"><div class="col-sm">';
 		text += items[i].name;
-		text += '</div><div class="col-sm">';
+		text += '</div><div class="col-sm list">';
 		text += items[i].desc;
-		text += '</div><div class="col-sm">';
+		text += '</div><div class="col-sm list">';
 		text += items[i].year;
 		text += '</div></div></li>';
 		console.log(items[i].name);
 		$("#booklist").append(text);
 	}
-	console.log("After for loop");
 	
 	home();
 	
