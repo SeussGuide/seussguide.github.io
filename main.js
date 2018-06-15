@@ -28,7 +28,7 @@ function init() {
 		}
 		
 		for(var i = 0; i < items.length; i++) {
-		var text = '<li><div class="row list"><div class="col-sm">';
+		var text = '<li><div class="row list"><div class="col-sm list grinched">';
 		text += items[i].name;
 		text += '</div><div class="col-sm list">';
 		text += items[i].desc;
