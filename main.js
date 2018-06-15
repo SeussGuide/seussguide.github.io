@@ -28,7 +28,7 @@ function init() {
 		}
 	});
 	
-	for(var i = 0; i < items.length; i++;) {
+	for(var i = 0; i < items.length; i++) {
 		var text = '<li><div class="row"><div class="col-sm">';
 		text += items[i].name;
 		text += '</div><div class="col-sm">';
