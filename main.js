@@ -28,6 +28,7 @@ function init() {
 		}
 	});
 	
+	console.log("Before for loop");
 	for(var i = 0; i < items.length; i++) {
 		var text = '<li><div class="row"><div class="col-sm">';
 		text += items[i].name;
@@ -39,6 +40,7 @@ function init() {
 		console.log(items[i].name);
 		$("#booklist").append(text);
 	}
+	console.log("After for loop");
 	
 	home();
 	
