@@ -26,10 +26,8 @@ function init() {
 		for(var d in data) {
 			items.push(data[d]);
 		}
-	});
-	
-	console.log(items.length);
-	for(var i = 0; i < items.length; i++) {
+		
+		for(var i = 0; i < items.length; i++) {
 		var text = '<li><div class="row list"><div class="col-sm">';
 		text += items[i].name;
 		text += '</div><div class="col-sm list">';
@@ -40,7 +38,8 @@ function init() {
 		console.log(items[i].name);
 		$("#booklist").append(text);
 	}
-	
+	});
+
 	home();
 	
 	$("#home").click(function() {
