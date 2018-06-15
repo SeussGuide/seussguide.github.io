@@ -22,18 +22,6 @@ function bookview() {
 }
 
 function init() {
-	home();
-	
-	$("#home").click(function() {
-		home();
-	});
-	
-	$("#list").click(function() {
-		list();
-	});
-}
-
-$(document).ready(function() {
 	$.getJSON('main.json', function(data){
 		for(var d in data) {
 			items.push(data[d]);
@@ -51,5 +39,13 @@ $(document).ready(function() {
 		$("#booklist").append(text);
 	}
 	
-	init();
+	home();
+	
+	$("#home").click(function() {
+		home();
+	});
+	
+	$("#list").click(function() {
+		list();
+	});
 });
