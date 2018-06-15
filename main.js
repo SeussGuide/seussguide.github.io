@@ -48,4 +48,4 @@ function init() {
 	$("#list").click(function() {
 		list();
 	});
-});
+}
