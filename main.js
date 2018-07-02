@@ -34,7 +34,7 @@ function init() {
 			text += items[i].desc;
 			text += '</div><div class="col-sm list">';
 			text += items[i].year;
-			text += '</div></div></li>';
+			text += '</div></div><br><hr></li>';
 			console.log(items[i].name);
 			$("#booklist").append(text);
 		}
