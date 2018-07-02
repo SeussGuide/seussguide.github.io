@@ -22,17 +22,17 @@ function bookview() {
 }
 
 function expand (e) {
-	console.log(e);
+	console.log(e.data-id);
 }
 
-function init() {
+function start() {
 	$.getJSON('main.json', function(data){
 		for(var d in data) {
 			items.push(data[d]);
 		}
 		
 		for(var i = 0; i < items.length; i++) {
-			var text = '<li class="clickable"><div class="row list"><div class="col-sm list grinched"><h3>';
+			var text = '<li data-id="'+ i +'" class="clickable"><div class="row list"><div class="col-sm list grinched"><h3>';
 			text += items[i].name;
 			text += '</h3></div><div class="col-sm list">';
 			text += items[i].desc;
@@ -43,7 +43,11 @@ function init() {
 			$("#booklist").append(text);
 		}
 	});
+	
+	init();
+}
 
+function init() {
 	home();
 	
 	$("#home").click(function() {
