@@ -21,6 +21,10 @@ function bookview() {
 	$(".bookview").show();
 }
 
+function expand (e) {
+	console.log(e);
+}
+
 function init() {
 	$.getJSON('main.json', function(data){
 		for(var d in data) {
@@ -50,5 +54,8 @@ function init() {
 		list();
 	});
 	
+	$(".clickable").click(function() {
+		expand(this);
+	});
 	
 }
