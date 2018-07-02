@@ -28,16 +28,16 @@ function init() {
 		}
 		
 		for(var i = 0; i < items.length; i++) {
-		var text = '<li><div class="row list"><div class="col-sm list grinched">';
-		text += items[i].name;
-		text += '</div><div class="col-sm list">';
-		text += items[i].desc;
-		text += '</div><div class="col-sm list">';
-		text += items[i].year;
-		text += '</div></div></li>';
-		console.log(items[i].name);
-		$("#booklist").append(text);
-	}
+			var text = '<li class="clickable"><div class="row list"><div class="col-sm list grinched"><h3>';
+			text += items[i].name;
+			text += '</h3></div><div class="col-sm list">';
+			text += items[i].desc;
+			text += '</div><div class="col-sm list">';
+			text += items[i].year;
+			text += '</div></div></li>';
+			console.log(items[i].name);
+			$("#booklist").append(text);
+		}
 	});
 
 	home();
@@ -49,4 +49,6 @@ function init() {
 	$("#list").click(function() {
 		list();
 	});
+	
+	
 }

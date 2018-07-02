@@ -17,9 +17,14 @@ ul, li {
   font-size: 15px;
 }
 
-
 .grinched {
 	font-family: 'grinchedregular';
 	text-align: center;
 	color: red !important;
+}
+
+.row {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
